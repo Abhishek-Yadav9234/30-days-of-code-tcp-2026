@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 02</title>
+</head>
+<body>
+    <h2>Event Schedule</h2>
+    <section>
+        <table border="01">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>09:00 AM</td>
+                <td>Opening Ceremony</td>
+                <td>HIRA Hall</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>Technical Workshop</td>
+                <td>Lab 2</td>
+            </tr>
+            <tr>
+                <td>02:00 PM</td>
+                <td>Tea Break</td>
+                <td>pi chai </td>
+            </tr>
+             <tr>
+                <td>04:00 PM</td>
+                <td>Panel Discussion</td>
+                <td>Conference Room</td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+
+
+    <section>
+         <h1>Event Registration Form</h1>
+
+    <form action="#" method="post">
+
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+     
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="1"><br><br>
+
+        <label for="eventdate">Event Date:</label><br>
+        <input type="date" id="eventdate" name="eventdate"><br><br>
+
+        <p>Ticket Type:</p>
+        <label>
+            <input type="radio" name="ticket" value="standard"> Standard
+        </label><br>
+        <label>
+            <input type="radio" name="ticket" value="vip"> VIP
+        </label><br>
+        <label>
+            <input type="radio" name="ticket" value="student"> Student
+        </label><br><br>
+
+        <p>Workshop Preferences:</p>
+        <label>
+            <input type="checkbox" name="workshop[]" value="web"> Web Development
+        </label><br>
+        <label>
+            <input type="checkbox" name="workshop[]" value="ai"> AI & ML
+        </label><br>
+        <label>
+            <input type="checkbox" name="workshop[]" value="cloud"> Cloud Computing
+        </label><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+        
+        <button type="submit">Register</button>
+
+    </form>
+    </section>
+
+</body>
+</html>
